@@ -1,5 +1,5 @@
-# ES6 + Babel + Compass + Gulp Boilerplate
-> A boilerplate for developing ES6 web apps using Babel, Compass & Gulp.
+# ES6 + Babel + Gulp + ExpressJS Boilerplate
+> A boilerplate for developing ES6 web apps using Babel, Gulp & ExpressJS.
 
 ## Babel
 
@@ -8,8 +8,8 @@ Babel is a compiler for writing next generation JavaScript. [babeljs.io](https:/
 ## Technology Stack
 
 - Transpiles ES6+ using [Babel](https://babeljs.io/) and [Browserify](http://browserify.org/)
-- SASS compilation using [Compass](http://compass-style.org/)
-- Local development environment with [node-livereload](https://github.com/napcs/node-livereload) using [gulp-livereload](https://github.com/vohof/gulp-livereload)
+- SASS compilation using [gulp-sass](https://github.com/dlmanning/gulp-sass)
+- Local development environment with [ExpressJS](https://github.com/expressjs/express) & [node-livereload](https://github.com/napcs/node-livereload) using [gulp-livereload](https://github.com/vohof/gulp-livereload)
 
 ## Usage
 
