@@ -25,7 +25,6 @@
     "gulp-babel": "^6.1.2",
     "gulp-cached": "^1.1.1",
     "gulp-clean": "^0.3.2",
-    "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-eslint": "^3.0.1",

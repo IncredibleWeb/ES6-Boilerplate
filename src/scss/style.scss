@@ -1,12 +1,2 @@
 @import 'partials/base';
-
-@import 'h5bp';
-@import 'compass/css3';
-@import 'compass/css3/flexbox';
-@import 'compass';
-
-@include h5bp-normalize;
-
 @import 'partials/page';
-
-@include h5bp-helpers;

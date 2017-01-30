@@ -14,8 +14,8 @@ function logChanges(event) {
 }
 
 // Watch for changes.
-gulp.task('watch', ['lint_js', 'scripts', 'lint_sass', 'compass'], () => {
+gulp.task('watch', ['lint_js', 'scripts', 'lint_sass', 'sass'], () => {
     livereload.listen();
     gulp.watch([global.paths.js], ['lint_js', 'scripts']).on('change', logChanges);
-    gulp.watch([global.paths.sass], ['lint_sass', 'compass']).on('change', logChanges);
+    gulp.watch([global.paths.sass], ['lint_sass', 'sass']).on('change', logChanges);
 });
