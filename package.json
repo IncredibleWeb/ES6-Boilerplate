@@ -2,6 +2,7 @@
   "name": "ES6Boilerplate",
   "description": "ES6 Boilerplate",
   "main": "dist/index.html",
+  "version": "0.1.0",
   "author": {
     "name": "Kevin Farrugia",
     "email": "kevin.farrugia@incredible-web.com",
