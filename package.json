@@ -1,6 +1,6 @@
 {
-  "name": "ES6Boilerplate",
-  "description": "ES6 Boilerplate",
+  "name": "es6-gulp-sass-boilerplate",
+  "description": "ES6 + Gulp + SASS Boilerplate",
   "main": "dist/index.html",
   "version": "0.1.0",
   "author": {
