@@ -1,6 +1,6 @@
 {
-  "name": "Packt",
-  "description": "Packt PWA Demo",
+  "name": "ES6 Boilerplate",
+  "description": "ES6 Boilerplate",
   "main": "dist/index.html",
   "author": {
     "name": "Kevin Farrugia",
