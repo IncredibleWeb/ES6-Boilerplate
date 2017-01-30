@@ -1,14 +1,12 @@
 'use strict';
 
 const express = require('express');
-const livereload = require('livereload');
 
 var app = express();
 
 var folder = process.argv[2] || 'src';
 
 if (folder === 'src') {
-    livereload.createServer();
     app.use(require('connect-livereload')());
 }
 app.use(express.static(folder));

@@ -3,7 +3,6 @@
 import gulp from 'gulp';
 import autoprefixer from 'gulp-autoprefixer';
 import concat from 'gulp-concat';
-import server from 'gulp-express';
 import compass from 'gulp-compass';
 import sourcemaps from 'gulp-sourcemaps';
 import cssNano from 'gulp-cssnano';
