@@ -22,4 +22,4 @@ global.paths = {
 
 requireDir('./gulp', { recurse: false });
 
-gulp.task('default', ['server']);
+gulp.task('default', ['build']);
