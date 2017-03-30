@@ -20,7 +20,10 @@ const b = browserify({
 
 // babelify JavaScript files
 gulp.task('scripts', () => {
-    return b.bundle()
+    return b.bundle().on('error', function(error) {
+            gutil.log(error.toString());
+            this.emit('end');
+        })
         .pipe(source(`${global.paths.src}/js/main.js`))
         .pipe(buffer())
         .pipe(sourcemaps.init())
@@ -31,7 +34,10 @@ gulp.task('scripts', () => {
 
 // babelify and minify JavaScript files (excludes source maps)
 gulp.task('scripts_dist', () => {
-    return b.bundle()
+    return b.bundle().on('error', function(error) {
+            gutil.log(error.toString());
+            this.emit('end');
+        })
         .pipe(source(`${global.paths.src}/js/main.js`))
         .pipe(buffer())
         .pipe(concat('script.js'))

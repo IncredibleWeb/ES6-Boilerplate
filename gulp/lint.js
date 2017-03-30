@@ -12,7 +12,10 @@ gulp.task('lint', ['lint_js', 'lint_sass']);
 gulp.task('lint_js', () => {
     return gulp.src(global.paths.js)
         .pipe(cache('lint_js'))
-        .pipe(eslint())
+        .pipe(eslint().on('error', function(error) {
+            gutil.log(error.toString());
+            this.emit('end');
+        }))
         .pipe(eslint.format());
 });
 
@@ -20,6 +23,9 @@ gulp.task('lint_js', () => {
 gulp.task('lint_sass', () => {
     return gulp.src(global.paths.sass)
         .pipe(cache('lint_sass'))
-        .pipe(sassLint())
+        .pipe(sassLint().on('error', function(error) {
+            gutil.log(error.toString());
+            this.emit('end');
+        }))
         .pipe(sassLint.format());
 });
